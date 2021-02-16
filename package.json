@@ -1,0 +1,23 @@
+{
+  "name": "date_converter",
+  "version": "1.0.0",
+  "description": "Date convertor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinivasanU/date_converter.git"
+  },
+  "keywords": [
+    "Date",
+    "covertor"
+  ],
+  "author": "Sri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srinivasanU/date_converter/issues"
+  },
+  "homepage": "https://github.com/srinivasanU/date_converter#readme"
+}
