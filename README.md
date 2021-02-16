@@ -40,4 +40,4 @@ Date Convertor supports these options:
 * *mediumdate* - _ShortMonthName dd , yyyy_ 
 * *longdate* - _LongMonthName dd , yyyy_ 
 * *shortfulldate* - _ShortDayName , ShortMonthName dd , yyyy_
-* *longfulldate* - _LonggayName , _LongMonthName dd , yyyy_
+* *longfulldate* - _LongDayName , _LongMonthName dd , yyyy_
