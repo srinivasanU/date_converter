@@ -4,12 +4,12 @@ Get Date conversion for your app
 
 # Installation
 
-`npm i date_converter --save`
+`npm i dateconvertermethods --save`
 
 Then...
 
 ```
-import { minusindiandate,slashindiandate } from 'date_converter';
+import { minusindiandate,slashindiandate } from 'dateconvertermethods';
 
 minusindiandate(new Date())
 slashindiandate(new Date())

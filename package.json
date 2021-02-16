@@ -1,5 +1,5 @@
 {
-  "name": "date_converter",
+  "name": "dateconvertermethods",
   "version": "1.0.0",
   "description": "Date convertor",
   "main": "index.js",
