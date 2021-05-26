@@ -1,15 +1,15 @@
 # What is this?
 
-Get Date conversion for your app
+Get daily conversion functions for your app
 
 # Installation
 
-`npm i dateconvertermethods --save`
+`npm i convertormethods --save`
 
 Then...
 
 ```
-import { minusindiandate,slashindiandate,minusshortdateindian,slashshortdateindian,minusfulldateglobal,minusshortdateglobal,slashfulldateglobal,slashshortdateglobal,mediumdate,longdate,shortfulldate,longfulldate } from 'dateconvertermethods';
+import { minusindiandate,slashindiandate,minusshortdateindian,slashshortdateindian,minusfulldateglobal,minusshortdateglobal,slashfulldateglobal,slashshortdateglobal,mediumdate,longdate,shortfulldate,longfulldate,indiancurrencyformatnodecimal,indiancurrencyformatwithdecimal } from 'convertormethods';
 
 minusindiandate(new Date())
 slashindiandate(new Date())
@@ -23,11 +23,13 @@ mediumdate(new Date())
 longdate(new Date())
 shortfulldate(new Date())
 longfulldate(new Date())
+indiancurrencyformatnodecimal(money)
+indiancurrencyformatwithdecimal(money)
 ```
 
 # Options
 
-Date Convertor supports these options:
+Convertor supports these options:
 
 * *minusindiandate* - _dd-mm-yyyy_ 
 * *slashindiandate* - _dd/mm/yyyy_ 
@@ -41,3 +43,5 @@ Date Convertor supports these options:
 * *longdate* - _LongMonthName dd , yyyy_ 
 * *shortfulldate* - _ShortDayName , ShortMonthName dd , yyyy_
 * *longfulldate* - _LongDayName , _LongMonthName dd , yyyy_
+* *indiancurrencyformatnodecimal* - _11111111_
+* *indiancurrencyformatwithdecimal* - _111111.111_

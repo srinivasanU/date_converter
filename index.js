@@ -107,3 +107,29 @@ module.exports.longfulldate = date => {
       var finaldate = d.toLocaleString('en-us', {weekday:'long'}).toString() + ', ' + d.toLocaleString('default', { month: 'long' }) + ' ' + ('0' + d.getDate().toString()).slice(-2) + ', ' + d.getFullYear().toString() 
       return finaldate
 }
+
+module.exports.indiancurrencyformatnodecimal = money => {
+      var truncmoney = Math.trunc(money)
+      var truncmoneytostring = truncmoney.toString()
+      var lastThree = truncmoneytostring.substring(truncmoneytostring.length-3);
+      var otherNumbers = truncmoneytostring.substring(0,truncmoneytostring.length-3);
+      if(otherNumbers != '')
+            lastThree = ',' + lastThree;
+      var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+      return res;
+}
+
+module.exports.indiancurrencyformatwithdecimal = money => {
+      var moneytostring = money.toString();
+      var afterPoint = '';
+      if(moneytostring.indexOf('.') > 0)
+            afterPoint = moneytostring.substring(moneytostring.indexOf('.'),moneytostring.length);
+      moneytostring = Math.floor(moneytostring);
+      moneytostring=moneytostring.toString();
+      var lastThree = moneytostring.substring(moneytostring.length-3);
+      var otherNumbers = moneytostring.substring(0,moneytostring.length-3);
+      if(otherNumbers != '')
+            lastThree = ',' + lastThree;
+      var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree + afterPoint;
+      return res;
+}

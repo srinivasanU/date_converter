@@ -1,7 +1,7 @@
 {
-  "name": "dateconvertermethods",
-  "version": "1.0.2",
-  "description": "Date convertor",
+  "name": "convertormethods",
+  "version": "1.0.3",
+  "description": "convertor methods",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
